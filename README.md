@@ -1,5 +1,5 @@
 # piano
-super simple piano in c
+C beginner project - super simple piano in c
 
 # Compile With
 
