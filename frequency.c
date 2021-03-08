@@ -102,7 +102,7 @@ float getFrequency(int keycode) {
         note = wnotes[idx];
     }
  
-    printf("\nKey: %c\tKey Code: %d\tFrequency: %.2f\tDuration: 500ms\tNote: %s\n", keycode, keycode, frequency, note);
+    printf("\nKey: %c\tKey Code: %d\tDuration: 500ms\tNote: %s\n", keycode, keycode, note);
  
     return frequency;
 }
