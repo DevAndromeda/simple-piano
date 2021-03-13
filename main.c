@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<windows.h>
+#include<stdlib.h>
 #include "frequency.h"
 
 int makeSound(int keycode, int dur) {
@@ -19,7 +20,18 @@ void main() {
 
     if (dur < 1) dur = 500;
 
-    printf("\nApp started! Press ctrl+c to exit & ctrl+r to restart!\n");
+    printf("\nApp started! Press ctrl+c to exit & ctrl+r to restart!\n\n");
+
+    printf(" ___________________________________________________________________________ \n");
+    printf("|  | | | |  |  | | | | | |  |  | | | |  |  | | | | | |  |  | | | |  |  | |  |\n");
+    printf("|  | | | |  |  | | | | | |  |  | | | |  |  | | | | | |  |  | | | |  |  | |  |\n");
+    printf("|  | | | |  |  | | | | | |  |  | | | |  |  | | | | | |  |  | | | |  |  | |  |\n");
+    printf("|  |S| |D|  |  |G| |H| |J|  |  |2| |3|  |  |5| |6| |7|  |  |9| |0|  |  |=|  |\n");
+    printf("|  |_| |_|  |  |_| |_| |_|  |  |_| |_|  |  |_| |_| |_|  |  |_| |_|  |  |_|  |\n");
+    printf("|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |\n");
+    printf("|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |\n");
+    printf("| Z | X | C | V | B | N | M | Q | W | E | R | T | Y | U | I | O | P | [ | ] |\n");
+    printf("|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|___|\n\n");
 
     while(1) {
 
@@ -30,6 +42,7 @@ void main() {
         // restart
         else if (keycode == 18) {
             keycode = 0;
+            system("cls");
             goto resetLabel;
         }
 
